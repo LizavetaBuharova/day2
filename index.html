@@ -6,6 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header><h1>Мой сайт</h1></header>
+    <p>Привет, я Лиза, и я учусб</p>
+
+    <section>
+        <h2>Мое видео</h2>
+        <video src="/img/IMG_4009.MP4" width="650" height="360" controls></video>
+    </section>
+
+    <section>
+        <h2>Моя музыка</h2>
+        <audio src="/img/video.mp3" controls></audio>
+    </section>
+
+    <section>
+        <h2>Интерактивный объект</h2>
+        <embed src="/img/9783111036496.pdf" width="500" height="400" type="application/pdf"></embed>
+    </section>
+
+    <form action="/submit" method="post">
+        <h2>Форма для сбора данных</h2>
+        <legend for="name">Ваше имя</legend>
+        <input type="text" name="name" id="name"><br>
+        <legend for="password">Пароль</legend>
+        <input type="password" name="password" id="password"><br>
+        <legend for="city">Выбирите ваш город</legend>
+        <select id="city">
+            <option value="msc">Москва</option>
+            <option value="spb">Питер</option>
+            <option value="rnd">Ростов</option>
+            <option value="ekb">Екатеренбург</option>
+        </select><br>
+        <br>
+        <legend>Ваши интересы:</legend>
+        <input type="checkbox" name="hobby" id="hobby1" value="reading">
+        <label for="hobby1">Чтение</label><br>
+        <input type="checkbox" name="hobby" id="hobby2" value="swimming">
+        <label for="hobby2">Плаванье</label><br>
+        <input type="checkbox" name="hobby" id="hobby3" value="sport">
+        <label for="hobby3">Спорт</label><br>
+
+        <input type="submit" value="Отпрвить">
+    </form>
 </body>
 </html>
