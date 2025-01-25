@@ -3,48 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Моя веб-страница</title>
 </head>
 <body>
     <header><h1>Мой сайт</h1></header>
     <p>Привет, я Лиза, и я учусб</p>
 
-    <section>
-        <h2>Мое видео</h2>
-        <video src="/img/IMG_4009.MP4" width="650" height="360" controls></video>
-    </section>
+    <h2>Мое видео</h2>
+    <video src="/img/IMG_4009.MP4" width="640" height="360" controls><Video</Video></video>
 
-    <section>
-        <h2>Моя музыка</h2>
-        <audio src="/img/video.mp3" controls></audio>
-    </section>
+    <h2>Моя музыка</h2>
+    <audio src="/img/video.mp3" controls></audio>
+ 
+    <h2>Интерактивный объект</h2>
+    <embed src="/img/9783111036496.pdf" width="650"height="350" type="application/pdf"></embed>
 
-    <section>
-        <h2>Интерактивный объект</h2>
-        <embed src="/img/9783111036496.pdf" width="500" height="400" type="application/pdf"></embed>
-    </section>
-
+    <h2>Форма для сбора данных</h2>
     <form action="/submit" method="post">
-        <h2>Форма для сбора данных</h2>
-        <legend for="name">Ваше имя</legend>
-        <input type="text" name="name" id="name"><br>
-        <legend for="password">Пароль</legend>
-        <input type="password" name="password" id="password"><br>
-        <legend for="city">Выбирите ваш город</legend>
-        <select id="city">
+        <label for="username">Ваше имя</label><br>
+        <input type="text" name="username" id="username"><br><br>
+
+        <label for="password">Пароль</label><br>
+        <input type="text" name="password" id="password"><br><br>
+
+        <label for="city">Выбирите ваш город</label><br>
+        <select id="city" name="city">
             <option value="msc">Москва</option>
             <option value="spb">Питер</option>
             <option value="rnd">Ростов</option>
             <option value="ekb">Екатеренбург</option>
-        </select><br>
-        <br>
-        <legend>Ваши интересы:</legend>
+        </select><br><br>
+
+        <label>Ваши интересы:</label><br>
         <input type="checkbox" name="hobby" id="hobby1" value="reading">
         <label for="hobby1">Чтение</label><br>
         <input type="checkbox" name="hobby" id="hobby2" value="swimming">
         <label for="hobby2">Плаванье</label><br>
         <input type="checkbox" name="hobby" id="hobby3" value="sport">
-        <label for="hobby3">Спорт</label><br>
+        <label for="hobby3">Спорт</label><br><br>
 
         <input type="submit" value="Отпрвить">
     </form>
